@@ -234,11 +234,11 @@
             etaRestriction: false,
             welcome: true,
             opLink: null,
-            rulesLink: null,
+            rulesLink: "https://hitovky.nogami.eu/rules.html",
             themeLink: null,
             fbLink: null,
             youtubeLink: null,
-            website: null,
+            website: "https://hitovky.nogami.eu",
             intervalMessages: [],
             messageInterval: 5,
             songstats: true,
@@ -1228,25 +1228,19 @@
             }, 60 * 60 * 1000);
             basicBot.loggedInID = API.getUser().id;
             basicBot.status = true;
-            API.sendChat('/cap ' + basicBot.settings.startupCap);
-            API.setVolume(basicBot.settings.startupVolume);
             $("#woot").click();
             if (basicBot.settings.startupEmoji) {
                 var emojibuttonoff = $(".icon-emoji-off");
                 if (emojibuttonoff.length > 0) {
                     emojibuttonoff[0].click();
                 }
-                API.chatLog(':smile: Emojis enabled.');
             }
             else {
-                var emojibuttonon = $(".icon-emoji-on");
+                var emojibuttonon = $(".icon-emoji-off");
                 if (emojibuttonon.length > 0) {
                     emojibuttonon[0].click();
                 }
-                API.chatLog('Emojis disabled.');
             }
-            API.chatLog('Avatars capped at ' + basicBot.settings.startupCap);
-            API.chatLog('Volume set to ' + basicBot.settings.startupVolume);
             loadChat(API.sendChat(subChat(basicBot.chat.online, {botname: basicBot.settings.botName, version: basicBot.version})));
         },
         commands: {
@@ -2573,7 +2567,7 @@
             },
 
             rouletteCommand: {
-                command: 'roulette',
+                command: 'ruleta',
                 rank: 'mod',
                 type: 'exact',
                 functionality: function (chat, cmd) {
