@@ -109,7 +109,7 @@
     "usedlockskip": "/me [%%NAME%% used lockskip.]",
     "lockskippos": "/me [@%%NAME%%] Lockskip will now move the dj to position %%POSITION%%.",
     "lockguardtime": "/me [@%%NAME%%] The lockguard is set to %%TIME%% minute(s).",
-    "maxlengthtime": "/me [@%%NAME%%] The maximum song duration is set to %%TIME%% minutes.",
+    "maxlengthtime": "/me [@%%NAME%%] Maximální trvání songu bylo nastaveno na %%TIME%% minut.",
     "motdset": "/me MotD set to:  %%MSG%%",
     "motdintervalset": "/me MotD interval set to %%INTERVAL%%.",
     "addbotwaitlist": "/me @%%NAME%%, don't try to add me to the waitlist, please.",
