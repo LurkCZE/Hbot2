@@ -183,9 +183,9 @@
         status: false,
         name: "Hbot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/LurkCZE/Hitovky-Bot/master/basicBot.js",
+        scriptLink: "https://rawgit.com/LurkCZE/Hbot2/master/basicBot.js",
         cmdLink: "http://hitovky.nogami.eu/Hbot.html",
-        chatLink: "https://rawgit.com/LurkCZE/Hitovky-Bot/master/lang/cs.json",
+        chatLink: "https://rawgit.com/LurkCZE/Hbot2/master/lang/cs.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -193,7 +193,7 @@
         settings: {
             botName: "Hbot",
             language: "czech",
-            chatLink: "https://rawgit.com/LurkCZE/Hitovky-Bot/master/lang/cs.json",
+            chatLink: "https://rawgit.com/LurkCZE/Hbot2/master/lang/cs.json",
             startupCap: 20, // 1-200
             startupVolume: 10, // 0-100
             startupEmoji: true, // true or false
