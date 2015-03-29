@@ -778,7 +778,7 @@
                     }, 1 * 1000, user)
                     :
                     setTimeout(function (user) {
-						API.sendChat("/me Vítej @" + user.username +)
+						API.sendChat(subChat("/me Vítej @", {name: user.username}));
                     }, 1 * 1000, user);
             }
         },
