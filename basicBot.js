@@ -54,7 +54,7 @@
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function (json) {
+        $.get("https://cdn.jsdelivr.net/gh/Yemasthui/basicBot/lang/langIndex.json", function (json) {
             var link = basicBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -183,9 +183,9 @@
         status: false,
         name: "Hbot",
         loggedInID: null,
-        scriptLink: "https://rawgit.com/LurkCZE/Hbot2/master/basicBot.js",
+        scriptLink: "https://cdn.jsdelivr.net/gh/LurkCZE/Hbot2/basicBot.js",
         cmdLink: "http://hitovky.nogami.eu/Hbot.html",
-        chatLink: "https://rawgit.com/LurkCZE/Hbot2/master/lang/cs.json",
+        chatLink: "https://cdn.jsdelivr.net/gh/LurkCZE/Hbot2/lang/cs.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -193,7 +193,7 @@
         settings: {
             botName: "Hbot",
             language: "czech",
-            chatLink: "https://rawgit.com/LurkCZE/Hbot2/master/lang/cs.json",
+            chatLink: "https://cdn.jsdelivr.net/gh/LurkCZE/Hbot2/lang/cs.json",
             startupCap: 20, // 1-200
             startupVolume: 10, // 0-100
             startupEmoji: true, // true or false
